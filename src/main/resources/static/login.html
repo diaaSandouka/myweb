@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="font-size: 25px;">Diaa-Gamer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" style="font-size: 25px;" aria-current="page" href="index.html">Home</a>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link"  style="font-size: 25px;" href="login.html">login</a>
+              </li>
+           
+            </ul>
+      
+          </div>
+        </div>
+      </nav>   
+<div >
+      <div id="maintab"  class="container" style="margin-top: 3em; border-top: 3px solid lightslategray;"><div class="row">
+<h1 style="margin-top: 1em;">login</h1>
+<h3 style="margin-top: 1em;color:red;" id="loginerrors"></h3>
+          
+        <forms style="margin-top: 0.5em;">
+            <div class="mb-3">
+              <label for="logmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="logmail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="passwordd" class="form-label">Password</label>
+              <input type="password" class="form-control" id="passwordd">
+            </div>
+                    
+            <button onclick="login()" type="submit" class="btn btn-primary">Submit</button>
+            <div id="emailHelp" class="form-text">if you dont have an account create one</div>
+          
+           <a href="login.html?acction=register"><button  style="margin-top: 0.5em;" type="submit" class="btn btn-primary">create account</button>
+           </a> 
+          </form>
+
+      </div></div>
+    </div>
+
+      <!-- Footer -->
+<footer class="bg-light text-center text-lg-start" style="margin-top: 5em;border-top: 3px solid grey;">
+    <!-- Grid container -->
+    <div class="container p-4" style="margin-top: 3em;">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+  
+          <p>
+            All rights are attributed to Diaa Gamer, and any violation of these rights will be subject to legal accountability
+
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+    
+        <!--Grid column-->
+  
+        <!--Grid column-->
+      
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="index.html">Diaa-Gamer.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+  <script>
+
+    var $_GET = {};
+    if(document.location.toString().indexOf('?') !== -1) {
+        var query = document.location
+                       .toString()
+                       // get the query string
+                       .replace(/^.*?\?/, '')
+                       // and remove any existing hash string (thanks, @vrijdenker)
+                       .replace(/#.*$/, '')
+                       .split('&');
+    
+        for(var i=0, l=query.length; i<l; i++) {
+           var aux = decodeURIComponent(query[i]).split('=');
+           $_GET[aux[0]] = aux[1];
+        }
+    }
+    
+    if ($_GET["acction"] == "register") {
+        document.getElementById("maintab").innerHTML =`
+        <h1 style="margin-top: 1em;">Register</h1>
+        <h3 style="margin-top: 1em;color:red;" id="registererrors"></h3>
+            <forms style="margin-top: 0.5em;">
+                <div class="mb-3">
+                  <label for="email" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="pass" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="pass">
+                </div>
+                <div class="mb-3">
+                  <label for="pass2" class="form-label">Repaet-Password</label>
+                  <input type="password" class="form-control" id="pass2">
+                </div>
+                        
+                <button type="submit" onclick="register()" class="btn btn-primary">Submit</button>
+           
+              </form>
+              <div id="emailHelp" class="form-text">if you  have an account log in </div>
+          
+          <a href="login.html?acction=login"><button  style="margin-top: 0.5em;" type="submit" class="btn btn-primary">log in</button>
+          </a> 
+          </div>
+    
+        
+        `;
+     
+    }
+    function register() {
+            var model = {
+
+                "email": document.getElementById("email").value,
+                "password": document.getElementById("pass").value,
+                "password2": document.getElementById("pass2").value,
+            };
+
+    $.ajax({
+                type: "POST",
+                url: "/createaccount/",
+
+                ContentType: "application/json ;charset=UTF-8",
+
+                crossOrigin: true,
+                dataType: "json",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                data: this.JSON.stringify(model),
+
+                success: function(data) {
+                  if (data[0] == "true") {
+                        localStorage.setItem("loggin", true);
+                        localStorage.setItem("email", data[1]);
+                        window.location.href = "index.html";
+                    } else {
+                        document.getElementById("registererrors").innerHTML = data[0];
+
+                    }
+
+
+                },
+                error: function(jqXHR, testStatus, errorThrown) {
+                    console.log("error");
+                }
+            });
+        }
+
+
+
+        var loggedin = localStorage.getItem("loggin");
+        if (loggedin === null) {
+          
+        } else {
+          document.getElementById("maintab").innerHTML =`
+          <button onclick="logout()" type="button" class="btn btn-secondary btn-lg btn-block" style="margin-top:5em;width:100%;">Log out</button>
+
+          `;  
+        }
+
+function logout() {
+  
+localStorage.clear();
+window.location.reload();
+
+}
+
+
+
+function login() {
+            var model = {
+
+                "email": document.getElementById("logmail").value,
+                "password": document.getElementById("passwordd").value,
+           
+            };
+
+
+            $.ajax({
+                type: "POST",
+                url: "/login/",
+
+                ContentType: "application/json ;charset=UTF-8",
+
+                crossOrigin: true,
+                dataType: "json",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                data: this.JSON.stringify(model),
+
+                success: function(data) {
+console.log(data);
+                    if (data[0] == "true") {              
+                        localStorage.setItem("loggin", true);
+                        localStorage.setItem("email", data[1]);
+                        window.location.href = "index.html";
+                    } else {
+                        document.getElementById("loginerrors").innerHTML = data[0];
+                    }
+
+            
+
+                },
+                error: function(jqXHR, testStatus, errorThrown) {
+                    console.log("error");
+                }
+            });
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

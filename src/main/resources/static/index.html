@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script> <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="font-size: 25px;">Diaa-Gamer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" style="font-size: 25px;" aria-current="page" href="index.html">Home</a>
+              </li>
+          
+              <li class="nav-item">
+                <a class="nav-link"  style="font-size: 25px;" href="login.html">login</a>
+              </li>
+        
+            </ul>
+            <button  onclick="add('index.html?action=settings')"  class="btn btn-outline-success" type="submit">Settings</button>
+            
+          <!--  <a target="_blank"  href="https://www.fiverr.com/share/l7vvaQ" > <button style="margin-left:10px;" class="btn btn-outline-success" >Developer</button>
+           </a> -->
+          </div>
+        </div>
+      </nav>   
+
+      <div id="maintab"  class="container" style="margin-top: 3em; border-top: 3px solid lightslategray;">
+        <div class="row" style="margin-top: 3em;text-align: center;align-items: center;" >
+<div class="col-12 col-md-3" align="center"><div class="card" style="width: 18rem;" >
+    <div style="text-align: center;align-items: center;">
+    <img src="img/instagram.png" style="width: 60%;"  class="card-img-top" alt="...">
+</div>
+    <div class="card-body">
+      <h5 class="card-title">My Instagram</h5>
+      <p class="card-text">In order to visit my Instagramm page, to know me you can just watch my content.</p>
+      <a href="https://www.instagram.com/d_g_ytr/" class="btn btn-primary">Instagram</a>
+    </div>
+  </div></div>
+<div class="col-12 col-md-3" align="center"><div class="card" style="width: 18rem;">
+    <div style="text-align: center;align-items: center;">
+    <img src="img/youtube.png" style="width: 60%;"   class="card-img-top" alt="...">
+</div>
+    <div class="card-body">
+      <h5 class="card-title">My-youtube</h5>
+      <p class="card-text">In order to visit my youtube channel, to know me you can just watch my content.</p>
+      <a href="https://www.youtube.com/c/dck12diaagamer55/featured" class="btn btn-primary">Youtube</a>
+    </div>
+  </div></div>
+<div class="col-12 col-md-3" align="center"><div class="card" style="width: 18rem;">
+    <div style="text-align: center;align-items: center;">
+    <img src="https://www.freeiconspng.com/uploads/discord-black-icon-1.png" style="width: 60%;"   class="card-img-top" alt="...">
+</div>
+    <div class="card-body">
+      <h5 class="card-title">my discord server</h5>
+      <p class="card-text">In order to visit my discord server, to talk to me you can just text me in the server chat.</p>
+      <a onclick="add('https://discord.gg/w4XUbMs2TEhttps://discord.gg/w4XUbMs2TE')"   class="btn btn-primary">discord server</a>
+    </div>
+  </div></div>
+<div class="col-12 col-md-3" align="center"><div class="card" style="width: 18rem;">
+    <div style="text-align: center;align-items: center;">
+    <img src="img/add.png" style="width: 60%;"   class="card-img-top" alt="...">
+</div>
+    <div class="card-body">
+      <h5 class="card-title">Suggestions</h5>
+      <p class="card-text">If you want to be a part of my channel and my content write me some suggestions.</p>
+      <a onclick="add('index.html?action=sugestions')" class="btn btn-primary">suggestions</a>
+    </div>
+  </div></div>
+    </div>
+    </div>
+  <div class="tableplace">
+      <table></table>
+  </div>
+
+
+      <!-- Footer -->
+<footer class="bg-light text-center text-lg-start" style="margin-top: 5em;border-top: 3px solid grey;">
+    <!-- Grid container -->
+    <div class="container p-4" style="margin-top: 3em;">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Footer Content</h5>
+  
+          <p>
+All rights are attributed to Diaa Gamer, and any violation of these rights will be subject to legal accountability
+          </p>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+    
+        <!--Grid column-->
+  
+        <!--Grid column-->
+      
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2021 Copyright:
+      <a class="text-dark" href="index.html">Diaa-Gamer.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ 
+<script>
+function add(input) {
+
+    var loggedin = localStorage.getItem("loggin");
+        if (loggedin === null) {
+          alert("please log in")
+        } else {
+            window.location.href=input;
+        }
+  
+}
+var $_GET = {};
+    if(document.location.toString().indexOf('?') !== -1) {
+        var query = document.location
+                       .toString()
+                       // get the query string
+                       .replace(/^.*?\?/, '')
+                       // and remove any existing hash string (thanks, @vrijdenker)
+                       .replace(/#.*$/, '')
+                       .split('&');
+    
+        for(var i=0, l=query.length; i<l; i++) {
+           var aux = decodeURIComponent(query[i]).split('=');
+           $_GET[aux[0]] = aux[1];
+        }
+    }
+    
+    if ($_GET["action"] == "sugestions") {
+        document.getElementById("maintab").innerHTML =`
+        <div style="margin-top:3em;" class="mb-3">
+            <h1>Suggest something</h1>
+  <label for="title" class="form-label">Suggestion-title</label>
+  <input type="email" class="form-control" id="title">
+</div>
+<div class="mb-3">
+  <label for="textareaa" class="form-label">Sugesstion-area</label>
+  <textarea class="form-control" id="textareaa" rows="3"></textarea>
+  <div class="col-auto" style="margin-top:2em;">
+    <button onclick="sugest()" type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+  </div>
+</div>
+        `;
+    }
+
+
+    if ($_GET["action"] == "my discord server") {
+        document.getElementById("maintab").innerHTML =`
+        <div class="row" style="margin-top: 3em;text-align: center;align-items: center;" >
+            <div class="col-12 col-md-3" align="center"><div class="card" style="width: 18rem;">
+    <div style="text-align: center;align-items: center;">
+    <img src="img/traffic-signal.png" style="width: 60%;"   class="card-img-top" alt="...">
+</div>
+    <div class="card-body">
+      <h5 class="card-title">none</h5>
+      <p class="card-text">at this time ther are no give aways</p>
+      <a class="btn btn-primary">none</a>
+    </div>
+  </div></div>
+  <div class="col-12 col-md-3" align="center"><div class="card" style="width: 18rem;">
+    <div style="text-align: center;align-items: center;">
+    <img src="img/traffic-signal.png" style="width: 60%;"   class="card-img-top" alt="...">
+</div>
+    <div class="card-body">
+      <h5 class="card-title">none</h5>
+      <p class="card-text">at this time ther are no give aways</p>
+      <a class="btn btn-primary">none</a>
+    </div>
+  </div></div>
+<div class="col-12 col-md-3" align="center"><div class="card" style="width: 18rem;">
+    <div style="text-align: center;align-items: center;">
+    <img src="img/traffic-signal.png" style="width: 60%;"   class="card-img-top" alt="...">
+</div>
+    <div class="card-body">
+      <h5 class="card-title">none</h5>
+      <p class="card-text">at this time ther are no give aways</p>
+      <a class="btn btn-primary">none</a>
+    </div>
+  </div></div>
+  <div class="col-12 col-md-3" align="center"><div class="card" style="width: 18rem;">
+    <div style="text-align: center;align-items: center;">
+    <img src="img/traffic-signal.png" style="width: 60%;"   class="card-img-top" alt="...">
+</div>
+    <div class="card-body">
+      <h5 class="card-title">none</h5>
+      <p class="card-text">at this time ther are no give aways</p>
+      <a class="btn btn-primary">none</a>
+    </div>
+  </div></div>
+    </div>
+        `;
+    }
+
+
+    if ($_GET["action"] == "settings") {
+        document.getElementById("maintab").innerHTML =`
+        <h5 id="updateerrors" style="color:red;margin-top:3em;"></h5>
+<label style="margin-top:1em;" for="oldpass" class="form-label">Old password</label>
+<input type="password" id="oldpass" class="form-control" aria-describedby="passwordHelpBlock">
+<label for="newpass" class="form-label">New password</label>
+<input type="password" id="newpass" class="form-control" aria-describedby="passwordHelpBlock">
+<div class="col-auto" style="margin-top:2em;">
+    <button onclick="update()" type="submit" class="btn btn-primary mb-3">update password</button>
+  </div>
+        `;
+    }
+
+    function sugest() {
+            var model = {
+
+                "email": localStorage.getItem("email"),
+                "sugestion": document.getElementById("textareaa").value,
+                "title": document.getElementById("title").value,
+            };
+
+    $.ajax({
+                type: "POST",
+                url: "/createsuggestion/",
+
+                ContentType: "application/json ;charset=UTF-8",
+
+                crossOrigin: true,
+                dataType: "json",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                data: this.JSON.stringify(model),
+
+                success: function(data) {
+ window.location.href="index.html";
+
+                },
+                error: function(jqXHR, testStatus, errorThrown) {
+                    console.log("error");
+                }
+            });
+        }
+
+        function update() {
+            var model = {
+
+                "email": localStorage.getItem("email"),
+                "password": document.getElementById("oldpass").value,
+                "password2": document.getElementById("newpass").value,
+            };
+
+    $.ajax({
+                type: "POST",
+                url: "/updatepassword/",
+
+                ContentType: "application/json ;charset=UTF-8",
+
+                crossOrigin: true,
+                dataType: "json",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                data: this.JSON.stringify(model),
+
+                success: function(data) {
+      console.log(data);
+      if (data[0] == "true") {
+                        window.location.href = "index.html";
+                    } else {
+                        document.getElementById("updateerrors").innerHTML = data[0];
+                    }
+
+                },
+                error: function(jqXHR, testStatus, errorThrown) {
+                    console.log("error");
+                }
+            });
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     if(localStorage.getItem("email") == "kashoaali@gmail.com" || localStorage.getItem("email") == "diaasa16@gmail.com"){
+
+        $.ajax({
+                type: "POST",
+                url: "/getallsugestions/",
+
+                ContentType: "application/json ;charset=UTF-8",
+
+                crossOrigin: true,
+                dataType: "json",
+                headers: {
+                    'Accept': 'application/json',
+                    'Content-Type': 'application/json'
+                },
+                data:"",
+
+                success: function(data) {
+                    
+                    var printable = `    <table class="table">
+        <thead>
+   
+            <th scope="col">Title</th>
+            <th scope="col">Suggestion</th>
+            <th scope="col">Delete</th>
+          </tr>
+        </thead>
+        <tbody>`;
+
+            for (let i = 0; i < data.length; i++) {
+                if(data[i].email != null ){
+                printable+=`
+                <tr>        
+            <td>${data[i].title}</td>
+            <td>${data[i].sugestion}</td>
+            <td><button onclick="deletthis(${data[i].id})" type="button" class="btn btn-light">Delete</button></td>
+          </tr>
+                `;
+                
+            }}
+            printable+=` </tbody>
+      </table>`;
+
+
+      document.getElementById("maintab").innerHTML=printable;
+
+                },
+                error: function(jqXHR, testStatus, errorThrown) {
+                    console.log("error");
+                }
+            });
+
+
+      
+     }
+function deletthis(input) {
+    var model = {
+
+"id": input,
+
+};
+
+$.ajax({
+type: "POST",
+url: "/createsuggestion/",
+
+ContentType: "application/json ;charset=UTF-8",
+
+crossOrigin: true,
+dataType: "json",
+headers: {
+    'Accept': 'application/json',
+    'Content-Type': 'application/json'
+},
+data: this.JSON.stringify(model),
+
+success: function(data) {
+window.location.href="index.html";
+},
+error: function(jqXHR, testStatus, errorThrown) {
+    console.log("error");
+}
+});  
+}
+</script>
+
+</body>
+</html>
